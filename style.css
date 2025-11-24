@@ -28,6 +28,10 @@ p {
     line-height: 1.5;
 }
 
+a {
+    text-decoration: none;
+}
+
 .nav__container {
     width: 100%;
     max-width: 1200px;
@@ -140,6 +144,16 @@ button:active {
     margin: 0 auto;
 }
 
+.row__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.no-cursor {
+    cursor: not-allowed;
+}
+
 /* Highlights */
 
 #highlights {
@@ -220,6 +234,7 @@ button:active {
 
 .books {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .book {
@@ -264,5 +279,37 @@ button:active {
     color: #938f8f;
 }
 
-/* Recent */
+/* Explore */
 
+#explore {
+    padding-top: 4vw;
+    background-color: rgba(115, 66, 214, 0.1);
+}
+
+/* Footer */
+
+footer {
+    background-color: #242424b5;
+}
+
+.footer__logo {
+    display: flex;
+}
+
+.footer__logo--img {
+    width: 160px;
+    filter: grayscale(1) invert(1);
+}
+
+.footer__link,
+.footer__copyright {
+    color: white
+}
+
+.footer__list {
+    margin: 20px 0 24px 0;
+}
+
+.footer__link {
+    padding: 0 16px;
+}
